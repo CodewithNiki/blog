@@ -37,12 +37,12 @@ export default function Home({ feed }) {
       </Head>
       {feed.length > 0 ? (
         feed.map((item, index) => (
-          <div>
-            <span>{item.title}</span>
+          <div className=" mt-7 mx-6">
+            <span className=" uppercase">{item.title}</span>
 
+            <div className="flex justify-between">
             <p>{item.content}</p>
-            <div className="post-card-action">
-              <button onClick={() => publishPost(item.id)}>
+              <button onClick={() => publishPost(item.id)} className="text-white border-2 py-2 px-6 bg-emerald-950 border-emerald-950 ">
                 {loading ? "Loading..." : "Publish"}
               </button>
             </div>

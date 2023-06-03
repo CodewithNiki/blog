@@ -37,22 +37,22 @@ export default function Create() {
       <Head>
         <title>Create Post</title>
       </Head>
-      <div>
+      <div className=" mt-7">
         <form onSubmit={handleSubmit}>
           {error ? <div className=" error form-group">{error}</div> : null}
           {message ? <div className="message form-group">{message}</div> : null}
           <div className="form-group">
-            <label>Title</label>
+            <label className=" text-xl mr-2">Title</label>
             <input
               type="text"
               name="title"
-              placeholder="Title"
+              placeholder=""
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              className=" outline-none border-2 p-1 border-black"
             />
           </div>
           <div className="form-group">
-            <label>Content</label>
             <textarea
               cols={50}
               name="content"
@@ -60,10 +60,11 @@ export default function Create() {
               rows={8}
               value={content}
               onChange={(e) => setContent(e.target.value)}
+              className=" outline-none border-2 p-1 border-black mt-5"
             />
           </div>
           <div className="form-group">
-            <button type="submit">Add Post</button>
+            <button type="submit" className="text-white border-2 py-2 px-6 bg-emerald-950 border-emerald-950 ">Add Post</button>
           </div>
         </form>
       </div>

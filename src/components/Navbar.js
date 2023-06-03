@@ -1,13 +1,13 @@
 import React from 'react';
 export default function Navbar() {
     return (
-        <div>
-            <nav className="navbar">
-                <div className='navbar-brand'>
-                    Posts App
+        <div className=' w-full bg-emerald-950 p-6 pb-0'>
+            <nav className=' w-full'>
+                <div className=' flex justify-center text-3xl text-blue-400 '>
+                    Welcome to Nikky's Blog
                 </div>
-                <div className='nav-links'>
-                    <ul>
+                <div className=''>
+                    <ul className=' flex  gap-6 text-white'>
                         <li>
                             <a href="/">Posts</a>
                         </li>
